@@ -12,3 +12,5 @@ ReactDOM.render(
   </div>,
   document.getElementById('global')
 );
+//here we pass in a function to CoordinateButton component
+//named on RecieveCoordinates
