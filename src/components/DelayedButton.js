@@ -7,14 +7,15 @@ class DelayedButton extends React.Component {
       this.props.onDelayedClick(event);
     }, this.props.delay);
   };
-  //event pooling
-
+  //this function takes in that event
+  //passes in that event to onDelayedClick
+  //this is also inside a setTimeout that is set to this.props.delay
 
   render() {
     return <button onClick={this.handleClick}>Delayed</button>;
   }
-  //here we have a button with a inClick event that 
-  //will ttrigger HandleClick when clicked, passing in an event
+  //we created a button that has a click event listener,
+  //when clicked it will pass that event to a function 
    
 }
 

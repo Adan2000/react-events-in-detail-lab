@@ -6,10 +6,9 @@ class CoordinatesButton extends Component {
     handleClick = event => {
         this.props.onRecieveCoordinates([event.clientX, event.clientY])
     }
-    //we call on that function passed in by the parent
-    //we use client X to get the x cordinate wherever it is clicked
-    //we use the clientY to get the y cordinate wherever the click is done
-    //this will log x and y cordinate
+    //this function uses that props that was passed in by index.js
+    //that function only has one job, print out whatever is passed
+    //so we pass in the event X and Y cordinates. as an Array [] ex. [3,5] first being the x and second being the y
 
 
     render() {
@@ -19,8 +18,8 @@ class CoordinatesButton extends Component {
             </div>
         )
     }
-    //here we render a button, onClick it
-    //when clicked it will pass an event to HandleClick 
+    //we add in a button with a event listener that then 
+    //triggers a function called handle click
 }
 
 export default CoordinatesButton;
